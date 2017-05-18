@@ -40,6 +40,7 @@ npm install --save @angular/adasd
 ## Imports in app.module.ts
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
 import { MdButtonModule, MdCardModule, MdMenuModule,MdToolbarModule,MdIconModule } from '@angular/material';
 
 
