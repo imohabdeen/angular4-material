@@ -27,6 +27,8 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Steps
+
 ## Install Angular Animations Package
 
 npm install --save @angular/animations
@@ -35,4 +37,25 @@ npm install --save @angular/animations
 
 npm install --save @angular/adasd
 
+## Imports in app.module.ts
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MdButtonModule, MdCardModule, MdMenuModule,MdToolbarModule,MdIconModule } from '@angular/material';
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    BrowserAnimationsModule,
+    MdButtonModule, MdCardModule, MdMenuModule,MdToolbarModule,MdIconModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 
